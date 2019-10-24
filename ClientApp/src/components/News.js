@@ -68,43 +68,34 @@ export class News extends Component {
 
     setNewsResults(results) {
         this.setState({ results: results.hits, isLoading: false });
-        console.log(results.hits);
+        //console.log(results.hits);
     }
 
     onClickPagePrev(event) {
         event.preventDefault();
-        const currentPage = event.target.value;
-        //console.log(currentPage);
-        const prevPage = currentPage > 0 ? currentPage - 1 : currentPage;
-        this.setState({ current_page: prevPage });
-        this.fetchSearch(); // call the search method passing in the page param
+        const currentPage = this.state.current_page;
+        var prevPage = currentPage > 0 ? currentPage - 1 : currentPage;
+        this.fetchSearch(prevPage); // call the search method passing in the page param
     }
 
     onClickPageNext(event) {
         event.preventDefault();
-        const currentPage = event.target.value;
-        //console.log(currentPage);
-        const nextPage = currentPage + 1;
-        this.setState({ current_page: nextPage });
-        this.fetchSearch(); // call the search method passing in the page param
+        const currentPage = this.state.current_page;
+        var nextPage = currentPage + 1;
+        this.fetchSearch(nextPage); // call the search method passing in the page param
     }
 
-    fetchSearch() {
+    fetchSearch(page = 0) {
         const searchTerm = this.state.searchTerm;
-        //const pageNum = this.state.current_page;
-        //console.log(pageNum);
-        // axios(`${BASE_URL}${PATH_SEARCH}${PARAM_SEARCH}` + searchTerm + '&page=' + pageNum)
-        //     .then(result => this.setNewsResults(result.data))
-        //     .catch(error => this.setState({
-        //         error,
-        //         isLoading: false
-        //     }));
-        axios(`${BASE_URL}${PATH_SEARCH}${PARAM_SEARCH}` + searchTerm)
+        axios(`${BASE_URL}${PATH_SEARCH}${PARAM_SEARCH}` + searchTerm + '&page=' + page)
             .then(result => this.setNewsResults(result.data))
             .catch(error => this.setState({
                 error,
                 isLoading: false
             }));
+            
+        //reset the current page
+        this.setState( {current_page: page });
     }
 
     renderResults(results) {
@@ -119,17 +110,17 @@ export class News extends Component {
                     Search
                 </Search>
                 <Paginator
-                    value={currentPage}
+                    value={currentPage + 1}
                     pagePrev={this.onClickPagePrev}
                     pageNext={this.onClickPageNext}>
                 </Paginator>
                 <div className="photo-list-container">
                     {results.map((result, i) =>
                         <div key={i} className="result-item">
-                            <h4><a href={result.url}>{result.story_title}</a></h4>
+                            <h4><a href={result.url}>{result.title}</a></h4>
                             <p>Author: {result.author} ({result.points} points)
                             <br />
-                                <em>Created: {moment(result.created_at).format('DD-MM-YYYY')}</em></p>
+                            <em>Created: {moment(result.created_at).format('DD-MM-YYYY')}</em></p>
                         </div>
                     )}
                 </div>

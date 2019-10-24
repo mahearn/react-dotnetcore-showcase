@@ -39,6 +39,9 @@ export class NavMenu extends Component {
                 <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/news">Hacker News</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink tag={Link} className="text-dark" to="/speechtotext">Translate speech to text</NavLink>
+                </NavItem>
               </ul>
             </Collapse>
           </Container>
