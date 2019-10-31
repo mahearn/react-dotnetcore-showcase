@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using tutorial_app.Models;
 using tutorial_app.ServiceImplementations;
 using tutorial_app.ServiceInterfaces;
 
@@ -38,6 +39,8 @@ namespace tutorial_app
             });
 
             services.AddMvc();
+            //services.AddSingleton<IConfiguration>(Configuration);
+            services.AddSingleton<ApplicationSettings>();
             services.AddTransient<IPhotosService, PhotosService>();
             services.AddTransient<ITranscriptionService, TranscriptionService>();
             

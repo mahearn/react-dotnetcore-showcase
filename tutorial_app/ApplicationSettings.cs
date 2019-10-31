@@ -5,7 +5,8 @@ namespace tutorial_app.Models
 {
   public class ApplicationSettings
   {
-    public IConfigurationSection ApiSettings { get; set; }
+    public IConfigurationSection ImageApiSettings { get; set; }
+    public IConfigurationSection TranscriptionApiSettings { get; set; }
 
     public ApplicationSettings()
     {
@@ -13,13 +14,14 @@ namespace tutorial_app.Models
           .AddJsonFile("appsettings.json")
           .Build();
 
-      ApiSettings = builder.GetSection("UnsplashApi");
+      ImageApiSettings = builder.GetSection("UnsplashApi");
+      TranscriptionApiSettings = builder.GetSection("AssemblyAI");
     }
 
-    public string BaseUri => ApiSettings["BaseUri"];
-
-    public string AccessKey => ApiSettings["AccessKey"];
-
-    public string SecretKey => ApiSettings["SecretKey"];
+    public string BaseUri => ImageApiSettings["BaseUri"];
+    public string AccessKey => ImageApiSettings["AccessKey"];
+    public string SecretKey => ImageApiSettings["SecretKey"];
+    public string TranscriptionBaseUri => TranscriptionApiSettings["BaseUri"];
+    public string TranscriptionApiToken => TranscriptionApiSettings["ApiToken"];
   }
 }

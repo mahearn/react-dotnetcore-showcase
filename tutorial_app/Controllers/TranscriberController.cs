@@ -43,23 +43,30 @@ namespace tutorial_app.Controllers
 
         [HttpPost("[action]")]
         [Route("api/Transcriber/FileUpload")]
+        // [ValidateAntiForgeryToken]
         public async Task<IActionResult> FileUpload([FromForm] IFormFile file)
         {
             AudioFile model = new AudioFile();
             model.File = file;
-            TranscriptionService _transcriptionService = transcriptionService;
-            byte[] fileBytes;
 
-            if (file.Length > 0)
+            TranscriptionService _transcriptionService = transcriptionService;
+
+            if (file != null && file.Length > 0)
             {
-                using (var memoryStream = new MemoryStream())
-                {
-                    await file.CopyToAsync(memoryStream);
-                    fileBytes = memoryStream.ToArray();
-                }
-                var result = await _transcriptionService.PostAsync(fileBytes);
+                var result = await _transcriptionService.PostAsync(model);
                 return Ok();
             }
+
+            // if (file != null && file.Length > 0)
+            // {
+            //     using (var memoryStream = new MemoryStream())
+            //     {
+            //         await file.CopyToAsync(memoryStream);
+            //         fileBytes = memoryStream.ToArray();
+            //     }
+            //     var result = await _transcriptionService.PostAsync(fileBytes);
+            //     return Ok();
+            // }
             return BadRequest();
         }
 
