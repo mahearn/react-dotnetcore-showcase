@@ -1,0 +1,34 @@
+{
+    "Skills": [
+        {
+            "Name": "C#"
+        },
+        {
+            "Name": "ASP.Net"
+        },
+        {  
+            "Name": "JavaScript"
+        },
+        {
+            "Name": "JQuery"
+        },
+        {
+            "Name": "React"
+        },
+        {
+            "Name": "Bootstrap"
+        },
+        {
+            "Name": "Sass"
+        },
+        {
+            "Name": "CSS3"
+        },
+        {
+            "Name": "HTML5"
+        },
+        {
+            "Name": "Gulp"
+        }
+    ]
+}

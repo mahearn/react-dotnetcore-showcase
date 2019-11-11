@@ -1,0 +1,22 @@
+div.role-box {
+    border-bottom: 1px solid gray;
+    margin-bottom: 22px;
+}
+
+.heading-band {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.4);
+    background: grey;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.section-bottom-margin {
+    margin-bottom: 30px;
+}
+
+.p-large {
+    font-size: 18px;
+}

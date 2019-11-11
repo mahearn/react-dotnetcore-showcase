@@ -5,7 +5,7 @@ export class Home extends Component {
   static displayName = Home.name;
 
   render () {
-    var displayDate = moment().format("MMM DD YYYY");
+    var displayDate = moment().format("DD MMM YYYY");
 
     return (
       <div>

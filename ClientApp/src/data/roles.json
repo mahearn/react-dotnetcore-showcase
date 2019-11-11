@@ -1,0 +1,34 @@
+{
+    "Roles": [
+        {
+            "Title": "Senior Web Developer",
+            "Company": "Atrio P/L",
+            "DateFrom": "2018-05-01",
+            "DateTo": "2019-09-13",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Redeveloped web portal front-end."
+                },
+                {
+                    "Achievement": "Created PrintSmart prototype."
+                },
+                {
+                    "Achievement": "Worked on integration project with Xero."
+                }
+            ]
+        },
+        {
+            "Title": "Web Developer",
+            "Company": "Dial-a-Dump Industries P/L",
+            "DateFrom": "2018-02-01",
+            "DateTo": "2019-04-30",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Worked on front-end of website."
+                }
+            ]
+        }
+    ]
+}
