@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import moment from 'moment';
 
 import rolesData from '../data/roles.json';
 import './Resume.css';
@@ -30,11 +29,14 @@ class Roles extends Component {
                         <article key={i}>
                             <h3>{role.Title}</h3>
                             <h4>{role.Company}</h4>
-                            <p>From {moment(role.DateFrom).format("DD MMM YYYY") } to {moment(role.DateTo).format("DD MMM YYYY")}</p>
+                            <p>From {role.DateFrom} &ndash; {role.DateTo}</p>
                             <p>Achievements:</p>
-                            {role.Achievements.map((achievement, i) =>
-                                <ul key={i}>
-                                    <li>{achievement.Achievement}</li>
+                            {role.Achievements.map((x, i) =>
+                                <ul>
+                                    <li key={i}>{x.Achievement}</li>
+                                    {x.SubPoints.map((y, i) =>
+                                        y.subpoint.length > 0 ? <ul><li key={i}>{y.subpoint}</li></ul> : ""
+                                    )}
                                 </ul>
                             )}
                         </article>

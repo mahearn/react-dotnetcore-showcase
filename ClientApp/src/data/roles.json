@@ -3,30 +3,206 @@
         {
             "Title": "Senior Web Developer",
             "Company": "Atrio P/L",
-            "DateFrom": "2018-05-01",
-            "DateTo": "2019-09-13",
+            "DateFrom": "May 2018",
+            "DateTo": "Aug 2019",
             "IsCurrent": false,
             "Achievements": [
                 {
-                    "Achievement": "Redeveloped web portal front-end."
-                },
-                {
-                    "Achievement": "Created PrintSmart prototype."
-                },
-                {
-                    "Achievement": "Worked on integration project with Xero."
+                    "Achievement": "Developed front-end UI of a complex customer IT management portal.",
+                    "SubPoints": [
+                        {"subpoint": "Created HTML 'pixel-perfect' page layouts from InVision mockups"},
+                        {"subpoint": "Translated HTML layouts into Razor page views"},
+                        {"subpoint": "Used technologies including C# Asp.Net MVC, .Net Core WebAPI, Html5, CSS3 (Sass), Bootstrap, Javascript, JQuery, Gulp"}
+                    ]
                 }
             ]
         },
         {
             "Title": "Web Developer",
             "Company": "Dial-a-Dump Industries P/L",
-            "DateFrom": "2018-02-01",
-            "DateTo": "2019-04-30",
+            "DateFrom": "Feb 2018",
+            "DateTo": "Apr 2018",
             "IsCurrent": false,
             "Achievements": [
                 {
-                    "Achievement": "Worked on front-end of website."
+                    "Achievement": "Developed two new websites in Umbraco CMS using JavaScript (ES6), HTML5 and CSS3, within a team of 4 developers. Other technologies used included Sass and Gulp for CSS and JavaScript code bundling and minification, and Git version control.",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Technical Analyst/Web Developer",
+            "Company": "NSW Electoral Commission (NSWEC)",
+            "DateFrom": "Oct 2015",
+            "DateTo": "Dec 2017",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Developed new Policy Library for Intranet and Website, using front-end technologies, using Squiz Matrix CMS",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed new website for 2017 Local Government elections (http://votensw.info/), using Squiz Matrix CMS",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Automated creation and updating of pages for the 2016 Local Council elections using PHP and JSON data files and the Matrix SOAP API.",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Implemented Google Site Search for NSWEC public websites.",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Wrote technical and build specifications for new website for the 2016 Local Council Elections (http://votensw.info/",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Implemented ReadSpeaker tool into votensw.info website.",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Web Developer",
+            "Company": "Bureau of Health Information",
+            "DateFrom": "Apr 2015",
+            "DateTo": "Sep 2015",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Maintenance and support of website only, including addition of new and updated content through Matrix CMS (using JavaScript, JQuery, CSS and HTML).",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Web Developer",
+            "Company": "Department of Education and Communities",
+            "DateFrom": "Feb 2015",
+            "DateTo": "Apr 2015",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Developed and implemented websites in Squiz Matrix CMS",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed user guides for content authors",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Web developer",
+            "Company": "Australian Computer Society",
+            "DateFrom": "Oct 2014",
+            "DateTo": "Feb 2015",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Made improvements to website using HTML, CSS and JavaScript, including advising ways to improve SEO and device compatibility",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Implemented Google Custom Search Engine, improving relevance and specificity of search results",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed a mobile version of the ACS Digital Library, providing access for members to online videos and magazines via smartphones (https://m.acs.org.au/). Technologies used included Bootstrap 3, JavaScript/jQuery, JSON data and REST web services.",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "ICT Teacher (Part time)",
+            "Company": "South Western Sydney Institute of TAFE",
+            "DateFrom": "Jul 2008",
+            "DateTo": "Nov 2014",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Taught and assessed students in Certificate IV Web-based Technologies and Diploma of IT",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed online learning materials and assessment tools",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Management and leadership of groups of people of varying ages and cultural backgrounds",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                }
+            ]
+        },
+        {
+            "Title": "Web developer",
+            "Company": "NPS MedicineWise",
+            "DateFrom": "Jan 2002",
+            "DateTo": "May 2014",
+            "IsCurrent": false,
+            "Achievements": [
+                {
+                    "Achievement": "Developed expertise in the Squiz Matrix CMS system in order to decrease reliance on Vendor support for website enhancements and new functionality",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed PHP SOAP-based client scripts to transfer data from external and in-house databases to the NPS website content management system (resulting in huge savings of time and money)",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed and maintained online case study application for health professionals",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed, maintained and enhanced resource ordering and distribution systems for the website, streamlining internal processes for product distribution",
+                    "SubPoints": [
+                        {"subpoint": ""}
+                    ]
+                },
+                {
+                    "Achievement": "Developed a large and complex web application using PHP and MySQL, for the collection and feedback of complex prescribing data from participating general practices, as part of the NPS Prescribing Data in General Practice demonstration project.",
+                    "SubPoints": [
+                        {"subpoint": ""} 
+                    ]
                 }
             ]
         }
